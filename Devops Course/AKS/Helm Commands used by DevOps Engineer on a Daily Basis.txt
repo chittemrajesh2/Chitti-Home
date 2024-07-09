@@ -1,0 +1,52 @@
+Helm Commands used by DevOps Engineer on a Daily Basis
+
+Add Repository to Helm
+helm repo add <Repository_Name> <Helm_Repository_Url>
+
+helm repo ls
+Displays Repositories added to Helm.
+
+Display Charts Available in Repository
+helm search repo <Repository_Name>
+
+helm create <Helm_Chart_Name>
+Default Helm Chart Directory will be Created.
+As Part of Helm Chart, Kubernetes Manifest Files like Deployment and Service YAML Files Etc will be Created.
+
+helm template <Helm_Chart_Name>
+Displays Kubernetes Manifest Files like Deployment and Service YAML Files available in Created Helm Chart.
+Note
+We Can Modify Kubernetes Manifest Files as per Requirement Before Deploying a Helm Chart into Kubernetes Cluster.
+It is strongly suggested to use helm template command every time we modify Helm Chart to have our Changes Validated.
+
+helm show values <Helm_Chart_Name>
+Displays Values of Helm Chart which are being used in Templates.
+
+helm lint <Helm_Chart_Name>
+To Check Indentation is Correct as Expected after Modifying Kubernetes Deployment Manifests.
+
+Dry Run Helm Chart
+helm install <ReleaseName> <Helm_Chart_Name> --dry-run
+We Can Validate Helm Charts before Deployment.
+Dry Run allows to test a Helm Chart Without Modifying Clusters State.
+
+Deploy Helm Chart
+helm install <ReleaseName> <Helm_Chart_Name>
+helm install <ReleaseName> <Helm_Chart_Name> -n <Namespace>
+
+helm ls
+helm ls -n <NameSpace>
+To List Applications Deployed using Helm Chart in Kubernetes Cluster.
+
+Update Docker Image Version and POD Replicas Count at Runtime
+helm upgrade <ReleaseName> <Helm_Chart_Name> --set image.tag=2 --set --replicaCount=2
+Note
+Once Helm Chart is Deployed, It is suggested to use helm upgrade over helm install command.
+
+Roll Back to Previous Revision
+helm rollback <ReleaseName>
+helm rollback <ReleaseName> -n <Namespace>
+
+helm uninstall <Release_Name>
+helm uninstall <Release_Name> -n <Namespace>
+Resources Created by Helm Chart will be Deleted from Kubernetes Cluster.

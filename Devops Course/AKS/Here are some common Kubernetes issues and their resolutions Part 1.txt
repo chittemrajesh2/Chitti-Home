@@ -1,0 +1,72 @@
+Kubernetes issues and their resolutions Part 1:
+
+🚨 Issue: Pods in CrashLoopBackOff State
+🔍 Cause: Application errors, missing configurations, or resources.
+🔧 Resolution: Check pod logs using kubectl logs [pod-name] to identify the error. Ensure configurations are correct and resources (like memory and CPU) are properly allocated.
+
+⚠️ Issue: Persistent Volume Claims (PVC) Stuck in Pending State
+🔍 Cause: Insufficient storage or misconfigured StorageClass.
+🔧 Resolution: Verify storage availability and ensure the StorageClass is correctly defined. Use kubectl describe pvc [pvc-name] for detailed error messages.
+
+❗ Issue: Service Unreachable
+🔍 Cause: Incorrect service configuration or network policies.
+🔧 Resolution: Check the service and endpoint details with kubectl describe svc [service-name]. Ensure network policies allow traffic to the service.
+
+⏳ Issue: High Pod Startup Latency
+🔍 Cause: Resource constraints or node performance issues.
+🔧 Resolution: Review resource requests and limits for pods. Consider increasing node resources or scaling the cluster.
+
+🔄 Issue: Rolling Update Failures
+🔍 Cause: Incompatible application versions or insufficient replicas.
+🔧 Resolution: Ensure backward compatibility of new versions. Increase the number of replicas to maintain availability during updates.
+
+🔍 Issue: Node Not Ready
+🔍 Cause: Node resource exhaustion, network issues, or kubelet failure.
+🔧 Resolution: Check node status with kubectl describe node [node-name]. Investigate kubelet logs and ensure node resources are sufficient.
+
+🔧 Issue: Container Image Pull Errors
+🔍 Cause: Incorrect image name, tag, or registry authentication issues.
+🔧 Resolution: Verify the image name and tag. Ensure credentials for private registries are configured correctly in Kubernetes secrets.
+
+📊 Issue: Metrics Server Not Working
+🔍 Cause: Incorrect installation or configuration.
+🔧 Resolution: Ensure the Metrics Server is deployed correctly. Check logs for errors using kubectl logs -n kube-system [metrics-server-pod].
+
+
+Kubernetes issues and their resolutions Part 2:
+
+🚫 Issue: Failed Liveness/Readiness Probes
+🔍 Cause: Incorrect probe configuration or application not responding in time.
+🔧 Resolution: Check the probe settings in the pod specification. Ensure your application has the correct endpoints for the probes and that it responds within the configured time limits.
+
+🌐 Issue: DNS Resolution Issues
+🔍 Cause: Misconfigured CoreDNS or network issues.
+🔧 Resolution: Verify CoreDNS is running correctly with kubectl get pods -n kube-system -l k8s-app=kube-dns. Check the configuration and logs of CoreDNS.
+
+🔒 Issue: Unauthorized Access Errors
+🔍 Cause: Incorrect RBAC (Role-Based Access Control) settings.
+🔧 Resolution: Review and adjust the RBAC policies to ensure the correct permissions are granted. Use kubectl auth can-i command to verify permissions.
+
+🔄 Issue: Deployment Not Updating
+🔍 Cause: Incorrect image tag or update strategy configuration.
+🔧 Resolution: Ensure the image tag is correct and different from the previous deployment. Check the deployment strategy and ensure it's set to RollingUpdate if you expect gradual updates.
+
+🌟 Issue: Autoscaling Not Working
+🔍 Cause: Misconfigured Horizontal Pod Autoscaler (HPA) or missing metrics.
+🔧 Resolution: Verify the HPA configuration with kubectl get hpa. Ensure the Metrics Server is running and providing metrics. Check the resource requests and limits of pods.
+
+🚦 Issue: Pod Stuck in Terminating State
+🔍 Cause: Stuck finalizers or issues with pod cleanup.
+🔧 Resolution: Check for finalizers in the pod specification with kubectl get pod [pod-name] -o yaml. Remove finalizers if necessary. Use kubectl delete pod --force --grace-period=0 [pod-name] as a last resort.
+
+📊 Issue: Incorrect Resource Usage Metrics
+🔍 Cause: Issues with metrics collection or outdated metrics.
+🔧 Resolution: Ensure the Metrics Server and Prometheus (if used) are functioning correctly. Verify the metrics collection configurations and check for any anomalies in the data.
+
+🕸️ Issue: Network Policy Blocking Traffic
+🔍 Cause: Incorrect network policy definitions.
+🔧 Resolution: Review and update network policies to allow desired traffic. Use kubectl describe networkpolicy [policy-name] to troubleshoot and understand the current rules.
+
+💾 Issue: Out of Disk Space on Nodes
+🔍 Cause: Excessive log files or large Docker images.
+🔧 Resolution: Clean up unused Docker images and logs. Consider using a log rotation policy. Monitor disk space usage regularly and set alerts for early detection.
