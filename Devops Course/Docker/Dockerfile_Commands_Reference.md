@@ -1,7 +1,7 @@
 1. `FROM`
 Purpose:
 Specifies the base image to use for creating the Docker image.
-```
+```Dockerfile
 # Use the official Python image as the base
 FROM python:3.9-slim
 # Set the working directory inside the container
