@@ -48,7 +48,7 @@ CMD ["python", "app.py"]
 How would you create an optimized Dockerfile for a Node.js application using multi-stage builds to reduce the final image size?
 
 **Answer:**
-```
+```Dockerfile
 # Stage 1: Build the application
 FROM node:14-alpine as builder
 
