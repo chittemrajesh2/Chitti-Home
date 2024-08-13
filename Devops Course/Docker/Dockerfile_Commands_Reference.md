@@ -78,3 +78,32 @@ CMD ["node", "server.js"]
 | `STOPSIGNAL`  | Define the system call signal that will be sent to the container to exit.                     |
 | `SHELL`       | Set the default shell to be used within the Docker container.                                  |
 | `HEALTHCHECK` | Check the container's health by running a command inside the container.                       |
+
+## CMD vs. ENTRYPOINT:
+
+**CMD**: Sets the default command to run and can be overridden by arguments provided during container startup.
+**ENTRYPOINT**: Defines the executable to run and cannot be overridden; CMD can provide default arguments to ENTRYPOINT.
+ENV vs. ARG:
+
+**ENV**: Sets environment variables that persist into the running container.
+**ARG**: Defines build-time variables that are used only during the image build process.
+
+## COPY vs ADD 
+
+### File Extraction:
+**COPY**: Does not support extracting tar archives.
+**ADD**: Automatically extracts tar archives.
+
+### URL Handling:
+
+**COPY**: Does not support downloading files from URLs.
+**ADD**: Can fetch and add files from URLs.
+
+### Simplicity:
+
+**COPY**: More straightforward, used for simple file copying.
+**ADD**: More feature-rich but may be overkill for simple tasks.
+
+### Best Practices:
+Prefer **COPY** for most use cases involving copying files from the build context into the Docker image. It is more explicit and easier to understand.
+Use **ADD** only when you need its additional features, such as extracting archives or downloading files.
