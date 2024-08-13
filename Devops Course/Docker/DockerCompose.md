@@ -53,3 +53,12 @@ volumes:
   db-data:
 
 ```
+## How to Use Docker Compose
+
+```
+docker-compose up
+docker-compose down
+docker-compose logs
+docker-compose up --scale web=3
+
+```
