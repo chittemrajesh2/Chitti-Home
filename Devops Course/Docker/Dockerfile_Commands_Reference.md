@@ -82,10 +82,12 @@ CMD ["node", "server.js"]
 ## CMD vs. ENTRYPOINT:
 
 **CMD**: Sets the default command to run and can be overridden by arguments provided during container startup.
+
 **ENTRYPOINT**: Defines the executable to run and cannot be overridden; CMD can provide default arguments to ENTRYPOINT.
 ENV vs. ARG:
 
 **ENV**: Sets environment variables that persist into the running container.
+
 **ARG**: Defines build-time variables that are used only during the image build process.
 
 ## COPY vs ADD 
