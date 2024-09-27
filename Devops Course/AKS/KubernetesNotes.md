@@ -611,8 +611,16 @@ spec:
 | **PreferNoSchedule**   | Kubernetes will try to avoid scheduling Pods on the node, but it is not a hard requirement.      |
 | **NoExecute**          | Pods that are already running on the node will be evicted if they do not have a matching toleration, and new Pods will not be scheduled on the node. |
 
+### Affinity and Anti-Affinity Concepts
+
+| **Concept**           | **Description**                                                                                              | **Use Case**                                                                               |
+|-----------------------|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| **Node Affinity**     | Rules that allow you to constrain which nodes your Pod is eligible to be scheduled on based on labels.     | Scheduling Pods on nodes with specific hardware or software requirements.                  |
+| **Pod Affinity**      | Rules that allow you to specify that a Pod should be scheduled in proximity to another Pod.                 | Ensuring that Pods that need to communicate frequently are located close to each other.   |
+| **Pod Anti-Affinity** | Rules that prevent a Pod from being scheduled in proximity to other specified Pods.                          | Spreading Pods across nodes to avoid single points of failure or resource contention.      |
 
 -------------------
+
 ## 1. How do you check the status of a pod?
 ```
 kubectl get pods -o wide
