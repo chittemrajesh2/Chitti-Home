@@ -148,10 +148,10 @@ spec:
 # 1.Ingress Controller and Ingress Resources
 1. **Ingress Controller**:
 Definition: An Ingress Controller is a Kubernetes component that manages HTTP and HTTPS traffic and routes it to services in a cluster. It acts as a bridge between the external world and the internal services.
-Purpose: It exposes HTTP/HTTPS routes from outside the Kubernetes cluster to services within the cluster.
+- **Purpose**: It exposes HTTP/HTTPS routes from outside the Kubernetes cluster to services within the cluster.
 2. **Ingress Resources**:
 Definition: Ingress Resource is an API object that defines how traffic should be routed to services based on the URL path or hostname.
-Purpose: It contains routing rules for directing external traffic to specific services within the cluster.
+- **Purpose**: It contains routing rules for directing external traffic to specific services within the cluster.
 ### Configuration of Ingress Controller and Ingress Resource
 1. Ingress Controller Setup:
 ```
