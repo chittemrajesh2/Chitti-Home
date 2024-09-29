@@ -42,15 +42,6 @@ balancer
 
 # Kubernetes Services
 
-| **Service Type**       | **Description**                                                                                                         | **Example YAML**                                                                                                                                                                                                                                                                                                                                                      |
-|------------------------|-------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **ClusterIP**           | Default service type. Exposes the service on a cluster-internal IP. Only reachable within the cluster.                  | ```yaml                                                                                                                                                                                                                                       apiVersion: v1 kind: Service metadata:   name: clusterip-service spec:   selector:     app: myapp   ports:     - protocol: TCP       port: 80       targetPort: 8080   type: ClusterIP ``` |
-| **NodePort**            | Exposes the service on each Node’s IP at a static port (the NodePort). Makes the service accessible externally.         | ```yaml                                                                                                                                                                                                                                       apiVersion: v1 kind: Service metadata:   name: nodeport-service spec:   type: NodePort   selector:     app: myapp   ports:     - port: 80       targetPort: 8080       nodePort: 30007 ``` |
-| **LoadBalancer**        | Creates an external load balancer that distributes traffic across your pods.                                             | ```yaml                                                                                                                                                                                                                                       apiVersion: v1 kind: Service metadata:   name: loadbalancer-service spec:   type: LoadBalancer   selector:     app: myapp   ports:     - protocol: TCP       port: 80       targetPort: 8080 ``` |
-| **Headless**            | Doesn’t allocate a ClusterIP. Primarily used for StatefulSets, and relies on DNS for service discovery.                  | ```yaml                                                                                                                                                                                                                                       apiVersion: v1 kind: Service metadata:   name: headless-service spec:   clusterIP: None   selector:     app: myapp   ports:     - port: 80       targetPort: 8080 ``` |
-| **ExternalName Service**| Maps a service to a DNS name rather than routing traffic to a set of pods. Useful for services outside the cluster.      | ```yaml                                                                                                                                                                                                                                       apiVersion: v1 kind: Service metadata:   name: externalname-service spec:   type: ExternalName   externalName: "example.com" ``` |
-| **External IP Service** | Exposes the service on an external IP address. Can be used to expose services outside the cluster using external IPs.    | ```yaml                                                                                                                                                                                                                                       apiVersion: v1 kind: Service metadata:   name: external-ip-service spec:   type: ClusterIP   externalIPs:     - 192.168.1.100   selector:     app: myapp   ports:     - port: 80       targetPort: 8080 ``` |
-
 ## 1. ClusterIP
 - Default service type.
 - Only accessible from within the cluster.
@@ -70,11 +61,11 @@ spec:
       targetPort: 8080
   type: ClusterIP
 ```
-## 1. ClusterIP
+## 1. NodePort
 - Exposes the service on a static port on each node’s IP.
 - Useful when accessing services outside the cluster.
 - Example: Exposing a web application externally.
-```
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
