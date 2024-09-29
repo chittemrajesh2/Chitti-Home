@@ -16,6 +16,9 @@ These are the worker machines that actually run your containers. Each node has:
 responsible for managing pods and containers on the node.
 - **Container Runtime**: The software that actually runs your containers. Popular options 
 include Docker, containerd, and CRI-O.
+- **Sidecar** 
+- Sidecar containers are the secondary containers that run along with the main application container within the same Pod.
+- These containers are used to enhance or to extend the functionality of the primary app container by providing additional services, or functionality such as logging, monitoring, security, or data synchronization, without directly altering the primary application code
 - **Proxy**: A network proxy that handles communication between pods and services.
 ![image](https://github.com/user-attachments/assets/89b416f8-1be2-4634-8ca9-d299b5cd2701)
 
