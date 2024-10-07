@@ -10,7 +10,9 @@ considers factors like resource availability and node health.
 - **Controller Manager**: Manages the lifecycle of various Kubernetes objects, like 
 deployments, services, and pods. It ensures that the desired state of the cluster is 
 maintained.
+
 ##Types of Ingress Controller:
+
 ### 1. NGINX Ingress Controller
 - Description: The most popular and widely used Ingress Controller. It uses NGINX as a reverse proxy and load balancer to route traffic.
 - Use Case: Suitable for general purposes and widely supported in the Kubernetes ecosystem.
