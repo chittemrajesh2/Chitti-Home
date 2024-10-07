@@ -11,7 +11,7 @@ considers factors like resource availability and node health.
 deployments, services, and pods. It ensures that the desired state of the cluster is 
 maintained.
 
-##Types of Ingress Controller:
+## Types of Ingress Controller:
 
 ### 1. NGINX Ingress Controller
 - Description: The most popular and widely used Ingress Controller. It uses NGINX as a reverse proxy and load balancer to route traffic.
