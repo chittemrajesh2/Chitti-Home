@@ -68,3 +68,42 @@
 - **Definition**: Azure Storage Account is a cloud storage service that provides highly available and durable storage for blobs, files, queues, and tables.
 - **Real-time Scenario**: Used for storing unstructured data, media files, or backups in a cost-effective, scalable way.
 
+## 18. Network Security Group (NSG)
+- **Definition**: Azure Network Security Groups (NSG) are used to control inbound and outbound traffic to Azure resources by defining security rules.
+- **Real-time Scenario**: Used for securing VMs and subnets by filtering traffic based on IP address, port, and protocol.
+
+## 19. Application Security Group (ASG)
+- **Definition**: Azure Application Security Groups (ASG) allow you to group resources based on their applications for easy management of security rules.
+- **Real-time Scenario**: Used to simplify network security rule management by grouping VMs based on application roles.
+
+## 20. Virtual Network NAT
+- **Definition**: Azure Virtual Network NAT (Network Address Translation) provides outbound internet access for virtual machines in a VNet without the need for a public IP on each VM.
+- **Real-time Scenario**: Used to centralize and manage outbound connectivity for resources in private VNets.
+
+## 21. Virtual WAN
+- **Definition**: Azure Virtual WAN is a networking service that provides optimized and automated branch-to-branch and branch-to-Azure connectivity through a single portal.
+- **Real-time Scenario**: Used for enterprises with multiple branch offices or on-premises locations needing optimized and scalable network connections to Azure.
+
+## 22. Network Virtual Appliance (NVA)
+- **Definition**: NVAs are virtual machines that run network appliance software, such as firewalls, routers, or load balancers, in Azure.
+- **Real-time Scenario**: Used for implementing custom network security solutions or traffic management for complex networking environments.
+
+## 23. Azure AD Types
+- **Definition**: Azure Active Directory (Azure AD) provides identity and access management in the cloud. Types include Basic, Premium P1, and Premium P2.
+- **Real-time Scenario**: Used to manage user identities and access control for applications, with features scaling up for enterprises requiring advanced security.
+
+## 24. Azure AD B2B
+- **Definition**: Azure AD Business-to-Business (B2B) allows organizations to securely share resources and collaborate with external users.
+- **Real-time Scenario**: Used when collaborating with partners, vendors, or contractors, giving them access to internal apps without creating new identities in your directory.
+
+## 25. Azure AD B2C
+- **Definition**: Azure AD Business-to-Consumer (B2C) enables customer identity and access management, allowing businesses to manage customer profiles securely.
+- **Real-time Scenario**: Used for applications requiring user registration and authentication, typically for retail or service-based applications that need to manage customer access.
+
+## 26. VNet Types
+   - **VNet Peering**: Allows direct connectivity between two VNets. Used for linking VNets within the same or different Azure regions.
+   - **VNet to VNet**: Allows communication between VNets over Azure's backbone. Used for connecting resources across regions.
+   - **Point-to-Site**: Provides secure access to Azure VNets for individual clients via VPN. Used when remote employees need to securely access VNet resources.
+   - **Site-to-Site**: Enables a secure connection between an on-premises network and an Azure VNet via VPN. Used for hybrid cloud solutions.
+   - **ExpressRoute**: Provides a private, dedicated connection between on-premises infrastructure and Azure. Used for large enterprises requiring high throughput and low latency.
+
