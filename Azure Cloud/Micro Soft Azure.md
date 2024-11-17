@@ -1,5 +1,4 @@
 # Azure Resources Overview
-# Azure Resources Overview
 
 ## 1. Azure Data Lake
 - **Definition**: Azure Data Lake is a scalable and secure data storage service optimized for big data analytics workloads.
