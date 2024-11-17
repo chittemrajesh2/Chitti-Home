@@ -1,4 +1,39 @@
 # Azure Resources Overview
+# Azure Resources Overview
+
+## 1. Azure Data Lake
+- **Definition**: Azure Data Lake is a scalable and secure data storage service optimized for big data analytics workloads.
+- **Real-time Scenario**: Used for storing and analyzing large volumes of structured, semi-structured, and unstructured data, such as logs, IoT data, and social media streams.
+
+## 2. Service Bus
+- **Definition**: Azure Service Bus is a fully managed enterprise messaging service that decouples applications and services for scalability and reliability.
+- **Real-time Scenario**: Used for enabling asynchronous communication between microservices or integrating legacy systems with modern applications.
+
+## 3. Azure Data Factory
+- **Definition**: Azure Data Factory (ADF) is a data integration service that orchestrates data movement and transformation across on-premises and cloud environments.
+- **Real-time Scenario**: Used for building ETL (Extract, Transform, Load) pipelines to move and transform data for analytics or machine learning applications.
+
+## 4. Logic Apps
+- **Definition**: Azure Logic Apps is a cloud-based service that automates workflows and business processes through connectors for various systems.
+- **Real-time Scenario**: Used for automating tasks such as sending emails, integrating CRM systems, or managing approvals in a business process.
+
+## 5. Azure Backups
+- **Definition**: Azure Backup is a simple and cost-effective solution for backing up and restoring data in Azure.
+- **Real-time Scenario**: Used for protecting virtual machines, databases, and files against accidental deletion, corruption, or ransomware attacks.
+
+## 6. Cosmos DB
+- **Definition**: Azure Cosmos DB is a globally distributed, multi-model database service designed for high availability and low latency.
+- **Real-time Scenario**: Used for building scalable applications that require high throughput and real-time response, such as online retail, gaming, and IoT applications.
+
+## 7. Azure Active Directory (AD) B2B
+- **Definition**: Azure AD Business-to-Business (B2B) allows secure collaboration with external users by granting access to internal resources.
+- **Real-time Scenario**: Used to provide secure access to contractors, vendors, or business partners without creating separate accounts for them in the organization.
+
+## 8. Azure Active Directory (AD) B2C
+- **Definition**: Azure AD Business-to-Consumer (B2C) enables customer identity and access management for consumer-facing applications.
+- **Real-time Scenario**: Used by organizations to allow customers to sign in to applications using their preferred identity provider (Google, Facebook, etc.) or custom accounts.
+  
+++++++++++++++++++++++++++++++++++
 
 ## 1. Traffic Manager
 - **Definition**: Azure Traffic Manager is a DNS-based traffic load balancer that enables you to distribute traffic across multiple regions and endpoints.
