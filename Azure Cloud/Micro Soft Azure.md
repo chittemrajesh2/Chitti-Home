@@ -1,9 +1,12 @@
 # Azure Resources Overview
 
 ## 1. Azure Data Lake
-- **Definition**: Azure Data Lake is a scalable and secure data storage service optimized for big data analytics workloads.
+- **Definition**: A data lake is a **storage repository** that holds a large amount of data in its **native**, **raw** format.
+- Data lake stores are optimized for scaling their size to **terabytes** and **petabytes** of data.
+- A data lake helps you store everything in its **original**, **untransformed** state. This method differs from a traditional **data warehouse**
 - **Real-time Scenario**: Used for storing and analyzing large volumes of structured, semi-structured, and unstructured data, such as logs, IoT data, and social media streams.
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/b0fc6834-d3ca-441f-b3c1-d0c4bd125cee)
+
 
 ## 2. Service Bus
 - **Definition**: Azure Service Bus is a fully managed enterprise messaging service that decouples applications and services for scalability and reliability.
