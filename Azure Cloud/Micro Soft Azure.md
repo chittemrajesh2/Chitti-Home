@@ -14,6 +14,10 @@
 
 ## 4. Logic Apps
 - **Definition**: Azure Logic Apps is a cloud-based service that automates workflows and business processes through connectors for various systems.
+- Schedule and send email notifications using Office 365 when a specific event happens, for example, a new file is uploaded.
+- Route and process customer orders across on-premises systems and cloud services.
+- Move uploaded files from an SFTP or FTP server to Azure Storage.
+- Monitor tweets, analyze the sentiment, and create alerts or tasks for items that need review.
 - **Real-time Scenario**: Used for automating tasks such as sending emails, integrating CRM systems, or managing approvals in a business process.
 
 ## 5. Azure Backups
