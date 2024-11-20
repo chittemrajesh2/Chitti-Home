@@ -3,6 +3,7 @@
 ## 1. Azure Data Lake
 - **Definition**: Azure Data Lake is a scalable and secure data storage service optimized for big data analytics workloads.
 - **Real-time Scenario**: Used for storing and analyzing large volumes of structured, semi-structured, and unstructured data, such as logs, IoT data, and social media streams.
+![Uploading image.png…]()
 
 ## 2. Service Bus
 - **Definition**: Azure Service Bus is a fully managed enterprise messaging service that decouples applications and services for scalability and reliability.
