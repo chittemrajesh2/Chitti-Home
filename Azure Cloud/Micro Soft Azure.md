@@ -5,6 +5,7 @@
 - Data lake stores are optimized for scaling their size to **terabytes** and **petabytes** of data.
 - A data lake helps you store everything in its **original**, **untransformed** state. This method differs from a traditional **data warehouse**
 - **Real-time Scenario**: Used for storing and analyzing large volumes of structured, semi-structured, and unstructured data, such as logs, IoT data, and social media streams.
+- **Key data lake use cases include:**
 ![image](https://github.com/user-attachments/assets/b0fc6834-d3ca-441f-b3c1-d0c4bd125cee)
 
 
