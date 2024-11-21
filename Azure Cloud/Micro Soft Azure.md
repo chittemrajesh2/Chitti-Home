@@ -40,12 +40,13 @@ On-premises data movement
 ## 7. Azure Active Directory (AD) B2B
 - **Definition**: Azure AD Business-to-Business (B2B) allows secure collaboration with external users by granting access to internal resources.
 - securely share your company's applications and services with **partners** and **guest** users using Azure AD B2B. These users can come from different organizations
+- Microsoft Teams, Outlook, SharePoint, OneDrive Files, Power BI Dashboards
 - **Real-time Scenario**: Used to provide secure access to contractors, vendors, or business partners without creating separate accounts for them in the organization.
 
 ## 8. Azure Active Directory (AD) B2C
-- **Definition**: Azure AD Business-to-Consumer (B2C) enables customer identity and access management for consumer-facing applications.
+- **Definition**: customer identity and access management (CIAM) solution that allows businesses to manage and secure customer identities for their applications
 - **Real-time Scenario**: Used by organizations to allow customers to sign in to applications using their preferred identity provider (Google, Facebook, etc.) or custom accounts.
-  
+  Imagine you have an e-commerce platform where customers can browse products, make purchases, and manage their accounts. You want to enable customers to sign up and sign in using their existing social media accounts  Facebook or Google, enterprise accounts Microsoft or LinkedIn or local accounts (email and password).
 ++++++++++++++++++++++++++++++++++
 
 ## 1. Traffic Manager
