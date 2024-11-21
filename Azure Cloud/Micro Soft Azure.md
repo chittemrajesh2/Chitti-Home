@@ -14,12 +14,21 @@ On-premises data movement
 
 ## 2. Azure Data Bricks
 - **Azure Databricks** open analytics platform for building, deploying, sharing, and maintaining enterprise-grade data, analytics, and **AI** solutions at scale. The Databricks Data Intelligence Platform integrates with cloud storage and security in your cloud account, and manages and deploys cloud infrastructure
--**Real-time Scenario** Azure Databricks is particularly useful for organizations dealing with **large-scale** data processing and analytics workloads, providing a powerful and flexible platform to handle big data efficiently
-  
-## 3. Azure Data Factory
-- **Definition**: Azure Data Factory (ADF) is a data integration service that orchestrates data movement and transformation across on-premises and cloud environments.
-- **Real-time Scenario**: Used for building ETL (Extract, Transform, Load) pipelines to move and transform data for analytics or machine learning applications.
+- **Real-time Scenario** Azure Databricks is particularly useful for organizations dealing with **large-scale** data processing and analytics workloads, providing a powerful and flexible platform to handle big data efficiently
 ![image](https://github.com/user-attachments/assets/0e03d01b-d9c1-4953-9995-58686a2c0765)
+
+## 3. Azure Data Factory
+- **Definition**: cloud-based data integration service provided by Microsoft. It enables businesses to create, manage, and automate data pipelines that move and transform data from various sources into a centralized data store, making it ready for analytics and business intelligenc
+- **Real-time Scenario**: Used for building **ETL** (**Extract, Transform, Load**) pipelines to move and transform data for analytics or machine learning applications.
+- Code free ETL as a Service
+**Key Features:**
+- Data Movement
+- Data Transformation
+- Orchestration
+- Scalability
+- Integration
+![image](https://github.com/user-attachments/assets/c89a75d0-b874-40b5-88fa-e27b7fde16f4)
+
 
 ## 4. Logic Apps
 - **Definition**: Azure Logic Apps is a cloud-based service that automates workflows and business processes through connectors for various systems.
