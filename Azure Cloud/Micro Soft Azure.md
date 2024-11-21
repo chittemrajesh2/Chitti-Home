@@ -39,6 +39,7 @@ On-premises data movement
 
 ## 7. Azure Active Directory (AD) B2B
 - **Definition**: Azure AD Business-to-Business (B2B) allows secure collaboration with external users by granting access to internal resources.
+- securely share your company's applications and services with **partners** and **guest** users using Azure AD B2B. These users can come from different organizations
 - **Real-time Scenario**: Used to provide secure access to contractors, vendors, or business partners without creating separate accounts for them in the organization.
 
 ## 8. Azure Active Directory (AD) B2C
