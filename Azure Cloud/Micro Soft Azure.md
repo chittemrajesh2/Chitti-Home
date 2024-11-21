@@ -73,6 +73,7 @@ On-premises data movement
 - **Definition**: Azure Load Balancer is a layer 4 (TCP/UDP) load balancer that distributes incoming traffic among virtual machines or services.
 - **Real-time Scenario**: Used for distributing incoming traffic for high-availability applications running on virtual machines.
 
+
 ## 7. Azure Spring Apps
 - **Definition**: A fully managed service for deploying and scaling Spring Boot applications in Azure.
 - **Real-time Scenario**: Used by developers building microservices using the Spring framework to easily deploy and scale applications without managing infrastructure.
@@ -116,9 +117,9 @@ On-premises data movement
 ## 17. Storage Account
 - **Definition**: Azure Storage Account is a cloud storage service that provides highly available and durable storage for blobs, files, queues, and tables.
 - **Real-time Scenario**: Used for storing unstructured data, media files, or backups in a cost-effective, scalable way.
-
+ 
 ## 18. Network Security Group (NSG)
-- **Definition**: Azure Network Security Groups (NSG) are used to control inbound and outbound traffic to Azure resources by defining security rules.
+- **Definition**: network security group contains security rules that allow or deny inbound network traffic to, or outbound network traffic from, several types of Azure resources. For each rule, you can specify source and destination, port, and protocol.
 - **Real-time Scenario**: Used for securing VMs and subnets by filtering traffic based on IP address, port, and protocol.
 
 ## 19. Application Security Group (ASG)
