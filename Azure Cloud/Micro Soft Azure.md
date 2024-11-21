@@ -9,10 +9,10 @@ A data warehouse is a centralized repository that holds structured data (databas
 - Data lake stores are optimized for scaling their size to **terabytes** and **petabytes** of data.
 - A data lake helps you store everything in its **original**, **untransformed** state. This method differs from a traditional **data warehouse**
 - **Real-time Scenario**: Used for storing and analyzing large volumes of structured, semi-structured, and unstructured data, such as logs, IoT data, and social media streams.
-- **Key data lake use cases include:**
+**Key data lake use cases include:**
 1. Cloud and Internet of Things (IoT) data movement.
 2. Big data processing.
-3.- Analytics.
+3. Analytics.
 4. Reporting.
 5. On-premises data movement
 
@@ -38,8 +38,6 @@ Azure Synapse Analytics is an enterprise analytics service that accelerates time
 - data integration
 - enterprise data warehousing
 - big data analytics.
-
-
 
 ## 4. Logic Apps
 - **Definition**: Azure Logic Apps is a cloud-based service that automates workflows and business processes through connectors for various systems.
