@@ -6,11 +6,12 @@
 - A data lake helps you store everything in its **original**, **untransformed** state. This method differs from a traditional **data warehouse**
 - **Real-time Scenario**: Used for storing and analyzing large volumes of structured, semi-structured, and unstructured data, such as logs, IoT data, and social media streams.
 - **Key data lake use cases include:**
-Cloud and Internet of Things (IoT) data movement.
-Big data processing.
-Analytics.
-Reporting.
-On-premises data movement
+- Cloud and Internet of Things (IoT) data movement.
+- Big data processing.
+- Analytics.
+- Reporting.
+- On-premises data movement
+![image](https://github.com/user-attachments/assets/b48a3fe6-772b-4bb5-a49c-5097af65822b)
 
 ## 3. Azure Data Factory
 - **Definition**: cloud-based data integration service provided by Microsoft. It enables businesses to create, manage, and automate data pipelines that move and transform data from various sources into a centralized data store, making it ready for analytics and business intelligenc
