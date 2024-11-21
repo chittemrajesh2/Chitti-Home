@@ -15,7 +15,8 @@ On-premises data movement
 ## 2. Azure Data Bricks
 - **Azure Databricks** open analytics platform for building, deploying, sharing, and maintaining enterprise-grade data, analytics, and **AI** solutions at scale. The Databricks Data Intelligence Platform integrates with cloud storage and security in your cloud account, and manages and deploys cloud infrastructure
 - **Real-time Scenario** Azure Databricks is particularly useful for organizations dealing with **large-scale** data processing and analytics workloads, providing a powerful and flexible platform to handle big data efficiently
-![image](https://github.com/user-attachments/assets/0e03d01b-d9c1-4953-9995-58686a2c0765)
+![image](https://github.com/user-attachments/assets/2fc1f5d3-3209-4892-adc0-71fb04f31a85)
+
 
 ## 3. Azure Data Factory
 - **Definition**: cloud-based data integration service provided by Microsoft. It enables businesses to create, manage, and automate data pipelines that move and transform data from various sources into a centralized data store, making it ready for analytics and business intelligenc
@@ -27,7 +28,8 @@ On-premises data movement
 - Orchestration
 - Scalability
 - Integration
-![image](https://github.com/user-attachments/assets/c89a75d0-b874-40b5-88fa-e27b7fde16f4)
+![Uploading image.png…]()
+
 
 
 ## 4. Logic Apps
