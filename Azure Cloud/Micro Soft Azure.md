@@ -10,11 +10,11 @@ A data warehouse is a centralized repository that holds structured data (databas
 - A data lake helps you store everything in its **original**, **untransformed** state. This method differs from a traditional **data warehouse**
 - **Real-time Scenario**: Used for storing and analyzing large volumes of structured, semi-structured, and unstructured data, such as logs, IoT data, and social media streams.
 - **Key data lake use cases include:**
-- Cloud and Internet of Things (IoT) data movement.
-- Big data processing.
-- Analytics.
-- Reporting.
-- On-premises data movement
+1. Cloud and Internet of Things (IoT) data movement.
+2. Big data processing.
+3.- Analytics.
+4. Reporting.
+5. On-premises data movement
 
 ## 2. Azure Data Factory
 - **Definition**: cloud-based data integration service provided by Microsoft. It enables businesses to create, manage, and automate data pipelines that move and transform data from various sources into a centralized data store, making it ready for analytics and business intelligenc
