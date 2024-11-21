@@ -1,4 +1,8 @@
 # Azure Resources Overview
+What is Warehouse:
+A data warehouse is a centralized repository that holds structured data (database tables, Excel sheets) and semi-structured data (XML files, webpages) for the purposes of reporting, analysis, and other forms of business intelligenc
+
+![image](https://github.com/user-attachments/assets/b48a3fe6-772b-4bb5-a49c-5097af65822b)
 
 ## 1. Azure Data Lake
 - **Definition**: A data lake is a **storage repository** that holds a large amount of data in its **native**, **raw** format.
@@ -11,9 +15,8 @@
 - Analytics.
 - Reporting.
 - On-premises data movement
-![image](https://github.com/user-attachments/assets/b48a3fe6-772b-4bb5-a49c-5097af65822b)
 
-## 3. Azure Data Factory
+## 2. Azure Data Factory
 - **Definition**: cloud-based data integration service provided by Microsoft. It enables businesses to create, manage, and automate data pipelines that move and transform data from various sources into a centralized data store, making it ready for analytics and business intelligenc
 - **Real-time Scenario**: Used for building **ETL** (**Extract, Transform, Load**) pipelines to move and transform data for analytics or machine learning applications.
 - Code free ETL as a Service
@@ -24,15 +27,17 @@
 - Scalability
 - Integration
 ![image](https://github.com/user-attachments/assets/028f2891-fe44-43be-af61-84a702d1be4f)
-## 2. Azure Data Bricks
+## 3. Azure Data Bricks
 - **Azure Databricks** open analytics platform for building, deploying, sharing, and maintaining enterprise-grade data, analytics, and **AI** solutions at scale. The Databricks Data Intelligence Platform integrates with cloud storage and security in your cloud account, and manages and deploys cloud infrastructure
 - **Real-time Scenario** Azure Databricks is particularly useful for organizations dealing with **large-scale** data processing and analytics workloads, providing a powerful and flexible platform to handle big data efficiently
 ![image](https://github.com/user-attachments/assets/613bfce1-d6c4-4b27-a68a-e52011ea3816)
 
-
-
-
-
+## Azure Synapse Analytics : 
+Azure Synapse Analytics is an enterprise analytics service that accelerates time to insight across data warehouses and big data systems.
+3 main components:
+- data integration
+- enterprise data warehousing
+- big data analytics.
 
 
 
