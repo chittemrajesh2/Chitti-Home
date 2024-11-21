@@ -38,6 +38,14 @@ Azure Synapse Analytics is an enterprise analytics service that accelerates time
 - data integration
 - enterprise data warehousing
 - big data analytics.
+  
+## Azure Monitor
+- Azure Monitor is a comprehensive monitoring solution for collecting, analyzing, and responding to monitoring data from your cloud and on-premises
+  environments
+-  Azure Monitor to maximize the availability and performance of your applications and services
+-  
+
+![image](https://github.com/user-attachments/assets/ce119846-5bc3-4167-bc84-2412ef9f1d33)
 
 ## 4. Logic Apps
 - **Definition**: Azure Logic Apps is a cloud-based service that automates workflows and business processes through connectors for various systems.
@@ -46,6 +54,7 @@ Azure Synapse Analytics is an enterprise analytics service that accelerates time
 - Move uploaded files from an SFTP or FTP server to Azure Storage.
 - Monitor tweets, analyze the sentiment, and create alerts or tasks for items that need review.
 - **Real-time Scenario**: Used for automating tasks such as sending emails, integrating CRM systems, or managing approvals in a business process.
+![image](https://github.com/user-attachments/assets/2eb0a9c8-cfc7-4a00-b7b0-ce2b817555e1)
 
 ## 5. Azure Backups
 - **Definition**: Azure Backup is a simple and cost-effective solution for backing up and restoring data in Azure.
