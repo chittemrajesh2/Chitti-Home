@@ -12,12 +12,6 @@ Analytics.
 Reporting.
 On-premises data movement
 
-## 2. Azure Data Bricks
-- **Azure Databricks** open analytics platform for building, deploying, sharing, and maintaining enterprise-grade data, analytics, and **AI** solutions at scale. The Databricks Data Intelligence Platform integrates with cloud storage and security in your cloud account, and manages and deploys cloud infrastructure
-- **Real-time Scenario** Azure Databricks is particularly useful for organizations dealing with **large-scale** data processing and analytics workloads, providing a powerful and flexible platform to handle big data efficiently
-![image](https://github.com/user-attachments/assets/2fc1f5d3-3209-4892-adc0-71fb04f31a85)
-
-
 ## 3. Azure Data Factory
 - **Definition**: cloud-based data integration service provided by Microsoft. It enables businesses to create, manage, and automate data pipelines that move and transform data from various sources into a centralized data store, making it ready for analytics and business intelligenc
 - **Real-time Scenario**: Used for building **ETL** (**Extract, Transform, Load**) pipelines to move and transform data for analytics or machine learning applications.
@@ -28,7 +22,16 @@ On-premises data movement
 - Orchestration
 - Scalability
 - Integration
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/028f2891-fe44-43be-af61-84a702d1be4f)
+## 2. Azure Data Bricks
+- **Azure Databricks** open analytics platform for building, deploying, sharing, and maintaining enterprise-grade data, analytics, and **AI** solutions at scale. The Databricks Data Intelligence Platform integrates with cloud storage and security in your cloud account, and manages and deploys cloud infrastructure
+- **Real-time Scenario** Azure Databricks is particularly useful for organizations dealing with **large-scale** data processing and analytics workloads, providing a powerful and flexible platform to handle big data efficiently
+![image](https://github.com/user-attachments/assets/613bfce1-d6c4-4b27-a68a-e52011ea3816)
+
+
+
+
+
 
 
 
