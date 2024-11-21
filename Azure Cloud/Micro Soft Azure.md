@@ -9,10 +9,9 @@
 ![image](https://github.com/user-attachments/assets/b0fc6834-d3ca-441f-b3c1-d0c4bd125cee)
 
 
-## 2. Service Bus
-- **Definition**: Azure Service Bus is a fully managed enterprise messaging service that decouples applications and services for scalability and reliability.
-- **Real-time Scenario**: Used for enabling asynchronous communication between microservices or integrating legacy systems with modern applications.
-
+## 2. Azure Data Bricks
+- **Azure Databricks** open analytics platform for building, deploying, sharing, and maintaining enterprise-grade data, analytics, and **AI** solutions at scale. The Databricks Data Intelligence Platform integrates with cloud storage and security in your cloud account, and manages and deploys cloud infrastructure
+-**Real-time Scenario** Azure Databricks is particularly useful for organizations dealing with **large-scale** data processing and analytics workloads, providing a powerful and flexible platform to handle big data efficiently
 ## 3. Azure Data Factory
 - **Definition**: Azure Data Factory (ADF) is a data integration service that orchestrates data movement and transformation across on-premises and cloud environments.
 - **Real-time Scenario**: Used for building ETL (Extract, Transform, Load) pipelines to move and transform data for analytics or machine learning applications.
