@@ -4,8 +4,18 @@
 SAST tools analyze code for security vulnerabilities and flaws during development to catch issues early in the software development lifecycle.
 
 - **SonarCloud**: Integrates with Azure DevOps to provide code quality checks and security analysis for various languages. Configure it as part of your pipeline to detect
-## Software Quality SonarCloud Reports
+**SonarCloud.io** --> select organization name and below the screen shots
+**Dashboard**:
+![image](https://github.com/user-attachments/assets/567f0f09-4ad3-4ae5-becb-1e02ca4a4690)
+![image](https://github.com/user-attachments/assets/38e92bf7-ba7a-4314-9d72-46920b04b58f)
+![image](https://github.com/user-attachments/assets/cf54c445-53f1-4518-94cd-d951bbacea69)
+![image](https://github.com/user-attachments/assets/8aba1cc9-f778-499b-bf03-0df268465c7c)
+**Projects**: - select project --> Each Micro services have project -> Check the below the result's
+will get the which All PR details,
+- Yaml code Mention Project-Name and Project Key 
+- SonarPreparaion.yaml and SonarReport.yaml 
 
+## Software Quality SonarCloud Reports
 | Sonar Cloud Reports     | Software Quality           |
 |-------------------------|----------------------------|
 | **Vulnerabilities**     |  **Reliability**  |
@@ -16,10 +26,23 @@ SAST tools analyze code for security vulnerabilities and flaws during developmen
 | **Code Coverage**       |       |
 | **Code Complexity**     |       |
 
-**SonarCloud.io** --> select organization name and below the screen shots
-| Projects | Quality Profiles | Rules | Quality Gates | Memebers |
-![image](https://github.com/user-attachments/assets/2dd12893-8cf4-480c-837e-3c93429c6f2d)
-
+### 1. Explain the difference between SonarLint and SonarCloud?
+**SonarCloud**:
+- the is main server that performs complete analysis
+- The analysis is to provide your code base a 360 Â° view of the quality.
+**SonarLint**:
+- this is available only in the IDE (Visual Studio and Eclipse)
+- when you enter your code, fix quality issues, Like a spell checker
+- SonarLint is an agent which connects with SonarCloud and executes the analysis
+remotely.
+### 2. What is the difference between Sonar Runner and Sonar Scanner?
+- “Runner” is the old name for "Scanner"
+### 3. How is the architecture of the SonarQube?
+1. Source Code
+2. Sonar Scanner
+3. Sonar Analyzer
+4. SonarQube Database or send the report
+  
 - **Checkmarx**: A powerful SAST tool that helps identify vulnerabilities in source code, including custom code. It supports major programming languages and integrates directly with Azure DevOps pipelines.
 
 ## 2. Software Composition Analysis (SCA) Tools
