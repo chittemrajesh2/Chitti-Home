@@ -48,7 +48,7 @@ remotely.
 ## 2. Software Composition Analysis (SCA) Tools
 SCA tools analyze dependencies to identify vulnerabilities in open-source libraries or third-party software packages.
 - **Nexux IQ**:
-- 
+  
 - **WhiteSource Bolt**: A free SCA extension for Azure DevOps that helps detect vulnerabilities in open-source libraries used in the project. Provides vulnerability alerts, compliance reports, and remediation guidance.
 - **GitHub Advanced Security (GHAS)**: For projects hosted on GitHub, this tool offers dependency scanning and vulnerability management, especially useful for multi-repo setups interacting with Azure DevOps.
 
