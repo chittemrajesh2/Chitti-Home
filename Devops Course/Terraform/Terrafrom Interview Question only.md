@@ -1,7 +1,62 @@
 # Terraform Interview Questions and Answers
 
-## 1. What are Terraform Workspaces?
-Workspaces allow managing multiple environments (e.g., dev, staging, prod) within a single configuration. Each workspace has its own state file, aiding environment separation and resource management.
+## 1. Terraform workflow ?
+1. Init (Initialize the Working Directory): The terraform init command initializes your Terraform working directory
+- **Downloads Providers**: Terraform downloads the necessary plugins (providers) for the
+resources you're defining in your code. In your case, since you're using the local provider,
+Terraform will download the necessary plugin for local file operations.
+- **Creates State File**: Terraform creates a state file (**terraform.tfstate**) to track the current
+state of your infrastructure. This file is crucial for Terraform to understand what's already
+deployed and what needs to be changed.
+- **Sets Up Backend**: If you're using a remote backend (like Google Cloud Storage or AWS
+S3) to store your state file, terraform init will configure the backend connection.
+2. Plan (Preview Changes) : Terraform code and creates an execution
+plan, It shows you what changes Terraform will make to your infrastructure 
+**Output**: The terraform plan command will output a detailed plan, including:
+- Resources to Create: Lists the resources that will be created.
+- Resources to Update: Lists the resources that will be updated.
+- Resources to Destroy: Lists the resources that will be destroyed.
+3. Apply (Apply Changes) : It makes the actual changes to your infrastructure
+**Output**: 
+- Resources Created: Lists the resources that were created.
+- Resources Updated: Lists the resources that were updated.
+- Resources Destroyed: Lists the resources that were destroyed.
+4. Destroy (Clean Up Resources) : The terraform destroy command removes the resources that were created by
+Terraform.
+## 2. Terraform Command Lines
+**Format and Validate Terraform code**
+- terraform fmt #format code per HCL canonical standard
+- terraform validate #validate code for syntax
+- terraform validate -backend=false #validate code skip backend validation
+**Initialize your Terraform working directory**
+- terraform init #initialize directory, pull down providers
+- terraform init -get-plugins=false #initialize directory, do not download plugins
+- terraform init -verify-plugins=false #initialize directory, do not verify plugins for Hashicorp
+signature
+
+## 3.What is a null_resource?
+- Here, the null_resource allows you to run a command using the command line interface (CLI) within your Terraform workflow without deploying any resources. The provisioner local-exec runs the command on your machine, and the command argument specifies what to execute. Here, it’s an echo command, but it could be a script or any other command.
+```
+resource "null_resource" "local_7635" {
+  provisioner "local-exec" {
+    command = "echo 'Executing a one-time task with null_resource'"
+  }
+}
+---
+resource "null_resource" "run_bucket_terraform" {
+  provisioner "local-exec" {
+    command = "cd bucket && terraform init && terraform apply --auto-approve"
+  }
+}
+
+resource "aws_instance" "terrateam_in" {
+  ami           = "ami-0e86e20dae9224db8"
+  instance_type = "t2.micro"
+  subnet_id     = "subnet-02efa144df0a77c13"
+  depends_on    = [null_resource.run_bucket_terraform]
+}
+```
+
 
 ## 2. Best Practices for Managing Secrets in Terraform
 - Use `terraform-provider-vault` for secure storage.
