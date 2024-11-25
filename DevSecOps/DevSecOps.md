@@ -3,7 +3,23 @@
 ## 1. Static Application Security Testing (SAST) Tools
 SAST tools analyze code for security vulnerabilities and flaws during development to catch issues early in the software development lifecycle.
 
-- **SonarCloud**: Integrates with Azure DevOps to provide code quality checks and security analysis for various languages. Configure it as part of your pipeline to detect common security issues, maintain code quality, and track technical debt.
+- **SonarCloud**: Integrates with Azure DevOps to provide code quality checks and security analysis for various languages. Configure it as part of your pipeline to detect
+## Software Quality SonarCloud Reports
+
+| Sonar Cloud Reports     | Software Quality           |
+|-------------------------|----------------------------|
+| **Vulnerabilities**     |  **Reliability**  |
+| **Bugs**                |  **Maintainability**   |
+| **Static Code Analysis**|   **Security**   |
+| **Code Smells**         |       |
+| **Code Duplications**   |       |
+| **Code Coverage**       |       |
+| **Code Complexity**     |       |
+
+**SonarCloud.io** --> select organization name and below the screen shots
+| Projects | Quality Profiles | Rules | Quality Gates | Memebers |
+![image](https://github.com/user-attachments/assets/2dd12893-8cf4-480c-837e-3c93429c6f2d)
+
 - **Checkmarx**: A powerful SAST tool that helps identify vulnerabilities in source code, including custom code. It supports major programming languages and integrates directly with Azure DevOps pipelines.
 
 ## 2. Software Composition Analysis (SCA) Tools
