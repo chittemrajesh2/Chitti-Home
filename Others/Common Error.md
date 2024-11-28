@@ -7,6 +7,7 @@
 | 22               | SSH                        | Secure Shell for remote login and command execution.                           |
 | 80               | HTTP                       | HyperText Transfer Protocol for web traffic.                                   |
 | 443              | HTTPS                      | Secure version of HTTP using SSL/TLS encryption.                               |
+| 3389             | RDP                        | Remote Desktop Protocol for remote desktop access.                             |
 | 21               | FTP                        | File Transfer Protocol for transferring files.                                 |
 | 20               | FTP (Data)                 | FTP data transfer port.                                                        |
 | 25               | SMTP                       | Simple Mail Transfer Protocol for email delivery.                              |
@@ -22,7 +23,6 @@
 | 993              | IMAPS                      | Secure version of IMAP.                                                        |
 | 389              | LDAP                       | Lightweight Directory Access Protocol for directory services.                  |
 | 636              | LDAPS                      | Secure LDAP over SSL/TLS.                                                      |
-| 3389             | RDP                        | Remote Desktop Protocol for remote desktop access.                             |
 | 9092             | Apache Kafka               | Communication port for Kafka brokers.                                          |
 
 ---
