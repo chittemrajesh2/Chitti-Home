@@ -79,7 +79,7 @@ CMD ["node", "server.js"]
 | `SHELL`       | Set the default shell to be used within the Docker container.                                  |
 | `HEALTHCHECK` | Check the container's health by running a command inside the container.                       |
 ## What is Docker Compose?
-Docker Compose is a tool for defining and running multi-container Docker applications. It allows you to configure multiple services, networks, and volumes in a single file, and then start all these components with a single command. The configuration is done using a YAML file, typically named docker-compose.yml.
+Docker Compose is a tool for defining and running **multi-container Docker applications** It allows you to configure multiple **services, networks, and volumes** in a **single** file, and then start all these components with a single command. The configuration is done using a YAML file, typically named docker-compose.yml.
 
 ## Use Cases of Docker Compose
 **Multi-Container Applications**: When you have applications that consist of multiple services (e.g., a web server, a database, and a cache), Docker Compose allows you to manage them together.
