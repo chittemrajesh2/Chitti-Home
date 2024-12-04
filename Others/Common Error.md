@@ -55,4 +55,5 @@
 ---
 ## **Abbreviations**
 - **RDBMS** stands for Relational Database Management System
+
 These ports and error codes are commonly encountered in real-world scenarios and are frequently asked in DevOps interviews. Being familiar with their usage and troubleshooting them is essential for success.
