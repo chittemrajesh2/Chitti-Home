@@ -4,9 +4,25 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "=2.46.0"
+      version = "~>3.0"
     }
   }
+  backend "azurerm" {
+      resource_group_name  = "tfstate"
+      storage_account_name = "<storage_account_name>"
+      container_name       = "tfstate"
+      key                  = "terraform.tfstate"
+  }
+
+}
+
+provider "azurerm" {
+  features {}
+}
+
+resource "azurerm_resource_group" "state-demo-secure" {
+  name     = "state-demo"
+  location = "eastus"
 }
 
 #https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret
@@ -16,15 +32,6 @@ provider "azurerm" {
   client_secret   = "20000000-0000-0000-0000-000000000000"
   tenant_id       = "10000000-0000-0000-0000-000000000000"
   subscription_id = "20000000-0000-0000-0000-000000000000"
-}
-
-terraform {
-  backend "azurerm" {
-    resource_group_name  = "tf-state-rg"
-    storage_account_name = "tfstatesa"
-    container_name       = "tfstate"
-    key                  = "terraform.tfstate"
-  }
 }
 
 #create resource group
