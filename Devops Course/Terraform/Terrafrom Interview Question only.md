@@ -19,7 +19,7 @@ terraform taint RESOURCE_NAME
 terraform taint aws_instance.example
 terraform apply
 or
-Modern Alternative : **terraform apply -replace="RESOURCE_NAME"**
+Modern Alternative : terraform apply -replace="RESOURCE_NAME"
 
 ```
 ## 1. Terraform workflow ?
