@@ -1,5 +1,27 @@
 # Terraform Interview Questions and Answers
+## Terraform Taint
 
+## **What is Terraform Taint?**
+`terraform taint` is a command used to **mark a resource for forced recreation**. This ensures the resource is destroyed and recreated during the next `terraform apply`, even if there are no changes in the configuration.
+
+---
+
+## **Key Features**
+- **Purpose**: Resolve issues with unhealthy or corrupted resources.
+- **Recreation**: Forces the resource to be destroyed and recreated.
+- **Deprecated**: Replaced by the `-replace` flag as of Terraform **0.15.2**.
+
+---
+
+## **Command Syntax**
+```bash
+terraform taint RESOURCE_NAME
+terraform taint aws_instance.example
+terraform apply
+or
+Modern Alternative : **terraform apply -replace="RESOURCE_NAME"**
+
+```
 ## 1. Terraform workflow ?
 1. Init (Initialize the Working Directory): The terraform init command initializes your Terraform working directory
 - **Downloads Providers**: Terraform downloads the necessary plugins (providers) for the
