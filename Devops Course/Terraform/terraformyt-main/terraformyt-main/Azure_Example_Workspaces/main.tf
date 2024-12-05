@@ -9,6 +9,9 @@ terraform {
   }
 }
 
+# Note Dev: Commands "terraform apply --var-file=dev.tfvars"
+# Note Prod: Commands "terraform apply --var-file=prod.tfvars"
+
 #https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret
 provider "azurerm" {
   features {} 
