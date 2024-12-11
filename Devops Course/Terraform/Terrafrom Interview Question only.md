@@ -22,39 +22,22 @@ or
 Modern Alternative : terraform apply -replace="RESOURCE_NAME"
 
 ```
-## 1. Terraform workflow ?
-1. Init (Initialize the Working Directory): The terraform init command initializes your Terraform working directory
-- **Downloads Providers**: Terraform downloads the necessary plugins (providers) for the
-resources you're defining in your code. In your case, since you're using the local provider,
-Terraform will download the necessary plugin for local file operations.
-- **Creates State File**: Terraform creates a state file (**terraform.tfstate**) to track the current
-state of your infrastructure. This file is crucial for Terraform to understand what's already
-deployed and what needs to be changed.
-- **Sets Up Backend**: If you're using a remote backend (like Google Cloud Storage or AWS
-S3) to store your state file, terraform init will configure the backend connection.
-2. Plan (Preview Changes) : Terraform code and creates an execution
-plan, It shows you what changes Terraform will make to your infrastructure 
-**Output**: The terraform plan command will output a detailed plan, including:
-- Resources to Create: Lists the resources that will be created.
-- Resources to Update: Lists the resources that will be updated.
-- Resources to Destroy: Lists the resources that will be destroyed.
-3. Apply (Apply Changes) : It makes the actual changes to your infrastructure
-**Output**: 
-- Resources Created: Lists the resources that were created.
-- Resources Updated: Lists the resources that were updated.
-- Resources Destroyed: Lists the resources that were destroyed.
+## if the 2 employe merging dev statefile in to storage account
+- Terraform handles the locking automatically using backend-supported mechanisms.
+- If two pipelines try to run simultaneously and one of them has already acquired the lock, the other will fail with a locking error.
+- The failed pipeline needs to be retried after the lock is released by the first process.
+- **State Locking: **Terraform locks the state file in the remote backend (e.g., Azure Blob Storage) to prevent simultaneous modifications.
+- **Pipeline Queuing:** Configure pipelines to queue if another is already running, ensuring sequential execution for the same state file.
+- **Conflict Resolution:** If a conflict occurs, refresh the state **(terraform refresh)** before applying changes or manually merge updates.
+```
+when they are running from the commad line  how it will be
+Error: Error acquiring the state lock
+```
+3.
 4. Destroy (Clean Up Resources) : The terraform destroy command removes the resources that were created by
 Terraform.
-## 2. Terraform Command Lines
-**Format and Validate Terraform code**
-- terraform fmt #format code per HCL canonical standard
-- terraform validate #validate code for syntax
-- terraform validate -backend=false #validate code skip backend validation
-**Initialize your Terraform working directory**
-- terraform init #initialize directory, pull down providers
-- terraform init -get-plugins=false #initialize directory, do not download plugins
-- terraform init -verify-plugins=false #initialize directory, do not verify plugins for Hashicorp
-signature
+
+## 2. T
 
 ## 3.What is a null_resource?
 - Here, the null_resource allows you to run a command using the command line interface (CLI) within your Terraform workflow without deploying any resources. The provisioner local-exec runs the command on your machine, and the command argument specifies what to execute. Here, it’s an echo command, but it could be a script or any other command.
