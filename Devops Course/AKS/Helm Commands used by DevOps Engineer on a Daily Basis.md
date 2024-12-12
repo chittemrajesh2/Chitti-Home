@@ -22,6 +22,21 @@ helm create <Helm_Chart_Name>
 - Default Helm Chart Directory will be created.
 - As part of the Helm Chart, Kubernetes manifest files like Deployment and Service YAML files, etc., will be created.
 
+### Helm Chart Directory Structure
+```
+<Helm_Chart_Name>/
+├── charts/                 # Dependency charts
+├── templates/              # Kubernetes YAML templates
+│   ├── deployment.yaml     # Deployment manifest
+│   ├── service.yaml        # Service manifest
+│   ├── _helpers.tpl        # Helper templates
+│   ├── ingress.yaml        # Ingress manifest (optional)
+│   └── NOTES.txt           # Post-deployment notes
+├── values.yaml             # Default configuration values
+├── Chart.yaml              # Metadata about the Helm Chart
+└── README.md               # Documentation for the Helm Chart
+```
+
 ## Display Kubernetes Manifest Files in Helm Chart
 ```bash
 helm template <Helm_Chart_Name>
