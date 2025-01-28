@@ -1,5 +1,5 @@
 # Deploy NGINX Ingress Controller with Custom Domain and TLS in AKS
-
+- youtube : https://www.youtube.com/watch?v=Kt2p21ZRPHI&list=PLDkX8OJhBFVsVqsbjvSNscAsxZsD6ZWza&index=12
 ## Overview
 This guide provides steps to deploy an NGINX ingress controller in an Azure Kubernetes Service (AKS) cluster, configure a custom domain, and use Let’s Encrypt certificates for SSL/TLS.
 - Create a namespace ingress-basic for Ingress Controller where all ingress controller-related resources will be created.
